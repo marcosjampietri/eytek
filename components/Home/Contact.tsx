@@ -111,7 +111,7 @@ export default Contact;
 
 const Section = styled.section`
     width: 100vw;
-    height: 70vh;
+    height: 100vh;
     position: absolute;
     top: 400vh;
     left: 0vw;

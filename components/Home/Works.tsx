@@ -84,7 +84,7 @@ const Works = () => {
                 if (i < ref.current - 1 || i > ref.current + 1)
                     return { display: "none" };
                 const x = (i - ref.current) * width + (active ? mx : 0);
-                const scale = active ? 1 - Math.abs(mx * 3.5) / width / 2 : 1;
+                const scale = active ? 1 - Math.abs(mx) / width : 1;
                 const cursor = active ? "grabbing" : "grab";
                 return { x, scale, display: "block", cursor };
             });

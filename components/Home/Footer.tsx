@@ -34,9 +34,9 @@ export default Contact;
 
 const Section = styled.section`
     width: 100vw;
-    height: 30vh;
+    height: 100vh;
     position: absolute;
-    top: 470vh;
+    top: 500vh;
     left: 0vw;
     overflow-y: scroll;
 
