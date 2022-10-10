@@ -21,7 +21,7 @@ const CanvasWrapper = ({ children }: any) => {
                 gl={{ antialias: false }}
                 dpr={[1, 1.5]}
             >
-                <Stats />
+                {/* <Stats /> */}
 
                 <Preload all />
                 {children}

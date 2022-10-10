@@ -76,7 +76,7 @@ export default Titles;
 
 const Div = styled(animated.div)`
     position: fixed;
-    top: 0px;
+    top: 70px;
     left: 50vw;
     padding: 0px 5vw;
     width: fit-content;
@@ -89,6 +89,6 @@ const Div = styled(animated.div)`
     }
 
     h3 {
-        font-size: 10vw;
+        font-size: clamp(30px, 10vw, 100px);
     }
 `;

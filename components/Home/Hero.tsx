@@ -109,5 +109,5 @@ const H1 = styled(animated.h1)`
     margin: 0px 5px;
 
     color: hsla(0, 0%, 100%, 1);
-    font-size: clamp(24px, 6vw, 70px);
+    font-size: clamp(24px, 7vw, 70px);
 `;

@@ -66,7 +66,7 @@ const Works = () => {
 
     const bind = useDrag(
         ({ active, movement: [mx], direction: [xDir], cancel }) => {
-            if (active && Math.abs(mx) > width / 5) {
+            if (active && Math.abs(mx) > width / 3.5) {
                 ref.current = clamp(
                     ref.current + (xDir > 0 ? -1 : 1),
                     0,

@@ -41,10 +41,12 @@ const MiniMap = () => {
     }));
 
     // Set the drag hook and define component movement based on gesture data
-    const bind = useDrag(({ down, movement: [mx, my] }) => {
+    {
+        /* const bind = useDrag(({ down, movement: [mx, my] }) => {
         // down ? setdragn(true) : setdragn(false);
         api.start({ x: down ? mx : 0, y: down ? my : 0, immediate: down });
-    });
+    }); */
+    }
 
     const pgMarkers = useSprings(
         [...Array(4)].length,
@@ -73,7 +75,7 @@ const MiniMap = () => {
     });
 
     return (
-        <Div {...bind()} style={{ x, y, opacity: `${dragn ? 1 : ""}` }}>
+        <Div>
             {pgMarkers.map((styles, index) => (
                 <animated.div
                     key={index}
@@ -149,9 +151,7 @@ const PgNum = styled(animated.span)`
     position: relative;
     padding: 0px;
     width: 100px;
-    height: 15%;
-
-    overflow: hidden;
+    height: 70px;
 
     span {
         position: absolute;

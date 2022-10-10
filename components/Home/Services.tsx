@@ -138,7 +138,7 @@ const Services = () => {
 
     return (
         <Section>
-            <div
+            {/* <div
                 style={{
                     background: "cyan",
                     padding: "10px",
@@ -151,7 +151,7 @@ const Services = () => {
                 onClick={() => settrigger(!trigger)}
             >
                 TRIGGER ONCE: {trigger ? "ON" : "OFF"}
-            </div>
+            </div> */}
             <OurServ ref={ref}>
                 <animated.h2 style={{ width }}>OUR SERVICES</animated.h2>
             </OurServ>

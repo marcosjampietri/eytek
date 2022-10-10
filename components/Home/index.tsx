@@ -1,15 +1,19 @@
 import React from "react";
 import useStore from "../../store/";
 import dynamic from "next/dynamic";
-import { Mesh, MathUtils } from "three";
+{
+    /* import { Mesh, MathUtils } from "three"; */
+}
 // import { A11y } from "@react-three/a11y";
 import { ScrollControls, Scroll, Html } from "@react-three/drei";
 // import { useControls } from "leva";
 import { useSpring } from "react-spring";
 import { a } from "@react-spring/three";
-import { EffectComposer, SSAO, Bloom } from "@react-three/postprocessing";
+{
+    /* import { EffectComposer, SSAO, Bloom } from "@react-three/postprocessing";
 import { KernelSize } from "postprocessing";
-import { Physics, usePlane, useSphere } from "@react-three/cannon";
+import { Physics, usePlane, useSphere } from "@react-three/cannon"; */
+}
 
 import Hero from "./Hero";
 import Services from "./Services";
@@ -37,7 +41,7 @@ const Home = () => {
     return (
         <>
             <a.color attach="background" args={["black"]} />
-            <ScrollControls damping={10} pages={5} distance={4}>
+            <ScrollControls damping={10} pages={5} distance={2}>
                 <Html></Html>
                 <Scroll html>
                     <SetPage />
@@ -46,7 +50,7 @@ const Home = () => {
                     <Works />
                     <Contact />
                     <Footer />
-                    <Circle />
+                    {/* <Circle /> */}
                 </Scroll>
                 <Scroll>
                     {/* 
