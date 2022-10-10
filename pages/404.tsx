@@ -1,7 +1,7 @@
 import useStore from "../store";
 import dynamic from "next/dynamic";
 
-import NavBar from "../components/NavBar";
+import Disp from "../components/disp";
 import MiniMap from "../components/Home/Map";
 import Titles from "../components/Home/Titles";
 
@@ -19,9 +19,7 @@ const Home = dynamic(() => import("../components/Home/index"), {
 const DOM = () => {
     return (
         <>
-            <NavBar />
-            <Titles />
-            <MiniMap />
+            <Disp />
         </>
     );
 };
@@ -32,11 +30,7 @@ const R3F = () => {
     // It can also be inside R3F component (see `two.tsx` and `Box.tsx`)
     const { router } = useStore();
 
-    return (
-        <>
-            <Home />
-        </>
-    );
+    return <></>;
 };
 
 export default function Page() {
