@@ -70,7 +70,7 @@ const Works = () => {
 
     const bind = useDrag(
         ({ active, movement: [mx], direction: [xDir], cancel }) => {
-            if (active && Math.abs(mx) > width / 3.5) {
+            if (active && Math.abs(mx) > 150) {
                 ref.current = clamp(
                     ref.current + (xDir > 0 ? -1 : 1),
                     0,
@@ -84,7 +84,7 @@ const Works = () => {
                 if (i < ref.current - 1 || i > ref.current + 1)
                     return { display: "none" };
                 const x = (i - ref.current) * width + (active ? mx : 0);
-                const scale = active ? 1 - Math.abs(mx * 3) / width / 2 : 1;
+                const scale = active ? 1 - Math.abs(mx * 3.5) / width / 2 : 1;
                 const cursor = active ? "grabbing" : "grab";
                 return { x, scale, display: "block", cursor };
             });
@@ -133,7 +133,7 @@ const Section = styled.section`
 const Page = styled(animated.div)`
     position: absolute;
     width: 90%;
-    height: 80%;
+    height: 65%;
     touch-action: none;
 
     cursor: grab;
