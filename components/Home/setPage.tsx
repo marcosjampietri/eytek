@@ -27,8 +27,8 @@ const SetPage = () => {
         // Will start increasing when 1 / 6 of the scroll distance is reached,
         // and reach 1 when it reaches 2 / 6rds.
         const b = data.range(0.5 / 4, 2 / 4, 0);
-        const c = data.range(2.5 / 4, 1 / 4, 0);
-        const d = data.range(3.5 / 4, 1 / 4, 0);
+        const c = data.range(2.4 / 4, 1 / 4, 0);
+        const d = data.range(3.3 / 4, 1 / 4, 0);
 
         if (a || a == 0) {
             setpage(1);

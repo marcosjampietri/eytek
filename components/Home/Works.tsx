@@ -51,6 +51,10 @@ const Works = () => {
         scale: 1,
         display: "block",
         cursor: "alias",
+        config: {
+            tension: 180,
+            friction: 16,
+        },
     }));
 
     const [actv, setactv] = useState(false);
@@ -84,7 +88,8 @@ const Works = () => {
                 const cursor = active ? "grabbing" : "grab";
                 return { x, scale, display: "block", cursor };
             });
-        }
+        },
+        { axis: "lock", filterTaps: true }
     );
 
     return (

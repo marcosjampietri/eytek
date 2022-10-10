@@ -41,7 +41,7 @@ const Home = () => {
     return (
         <>
             <a.color attach="background" args={["black"]} />
-            <ScrollControls damping={10} pages={5} distance={2}>
+            <ScrollControls damping={10} pages={5.3} distance={2}>
                 <Html></Html>
                 <Scroll html>
                     <SetPage />
