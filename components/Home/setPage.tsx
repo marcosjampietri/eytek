@@ -28,7 +28,7 @@ const SetPage = () => {
         // and reach 1 when it reaches 2 / 6rds.
         const b = data.range(0.5 / 5, 2 / 5, 0);
         const c = data.range(2.5 / 5, 1 / 5, 0);
-        const d = data.range(3.5 / 5, 1 / 5, 0);
+        const d = data.range(3.5 / 5, 2 / 5, 0);
 
         if (a || a == 0) {
             setpage(1);

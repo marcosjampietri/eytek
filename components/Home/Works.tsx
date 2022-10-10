@@ -89,7 +89,7 @@ const Works = () => {
                 return { x, scale, display: "block", cursor };
             });
         },
-        { axis: "lock", filterTaps: true }
+        { axis: "lock", filterTaps: true, preventDefault: true }
     );
 
     return (

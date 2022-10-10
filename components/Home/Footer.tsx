@@ -34,7 +34,7 @@ export default Contact;
 
 const Section = styled.section`
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
     position: absolute;
     top: 500vh;
     left: 0vw;
