@@ -89,7 +89,7 @@ const Works = () => {
                 return { x, scale, display: "block", cursor };
             });
         },
-        { axis: "lock", filterTaps: true, preventDefault: true }
+        { axis: "x" }
     );
 
     return (
@@ -134,12 +134,11 @@ const Page = styled(animated.div)`
     position: absolute;
     width: 90%;
     height: 65%;
-    touch-action: none;
 
     cursor: grab;
 
     div {
-        touch-action: none;
+        touch-action: pan-y;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;

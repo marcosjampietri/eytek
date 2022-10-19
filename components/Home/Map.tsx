@@ -11,6 +11,7 @@ import {
 import { useDrag } from "@use-gesture/react";
 import styled from "styled-components";
 import React from "react";
+import { below } from "../../styles/breakpoints";
 
 // Usage
 
@@ -113,6 +114,7 @@ export default MiniMap;
 
 const Div = styled(animated.div)`
     position: fixed;
+
     top: 0px;
     height: 50vh;
     margin: 25vh 0px;
@@ -124,8 +126,8 @@ const Div = styled(animated.div)`
     // transform: translateY(-50%);
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
-    box-shadow: inset 1px 1px 10px hsla(0, 0%, 0%, 0.3);
-    cursor: move;
+    // box-shadow: inset 1px 1px 10px hsla(0, 0%, 0%, 0.3);
+    //cursor: move;
 
     transition: 0.5s;
     :hover {
@@ -141,11 +143,21 @@ const Div = styled(animated.div)`
         // transform: translateX(-50%);
         background: grey;
         border-radius: 2px;
-        margin: 4px 0px;
+        margin: 4px 10px;
 
         width: 4px;
         height: 25%;
     }
+
+    ${below.med`
+        
+        align-items: start;
+        height: 70vh;
+        margin: 15vh 0px;
+        padding: 0px 10px
+        
+       
+    `};
 `;
 const PgNum = styled(animated.span)`
     position: relative;
@@ -159,7 +171,7 @@ const PgNum = styled(animated.span)`
         left: 50%;
         width: 100%;
         height: fit-content;
-        font-size: 45px;
+        font-size: clamp(24px, 5vw, 48px);
         font-family: Modena Sans;
 
         color: hsla(42, 100%, 70%, 1);
